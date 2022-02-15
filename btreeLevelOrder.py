@@ -32,3 +32,37 @@ class Solution(object):
                     
                 
         return res 
+    
+    
+#  class Solution(object):
+#     def levelOrder(self, root):
+#         """
+#         :type root: TreeNode
+#         :rtype: List[List[int]]
+#         """
+#         result = []
+        
+#         def helper(root, count):
+            
+#             if not root:
+#                 return
+            
+#             if count < len(result)-1:
+#                 result[count].append(root.val);
+    
+#             else:
+#                 for i in range(len(result)-1, count):
+#                     result.append([])
+#                 result[count].append(root.val)
+        
+#             if root.left:
+#                 helper(root.left, count + 1)
+            
+#             if root.right:
+#                 helper(root.right, count + 1)
+                
+#             return;
+        
+#         helper(root, 0)
+#         return result
+        
